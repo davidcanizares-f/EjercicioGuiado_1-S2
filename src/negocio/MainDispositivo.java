@@ -12,26 +12,25 @@ public class MainDispositivo {
 
         Dispositivo dispositivo2 = new Dispositivo();
         dispositivo2.nombre= "Televisor";
-        dispositivo2.tipo = "Entretenimiento";
+        dispositivo2.tipo = "Dispositivo Multimedia";
         dispositivo2.activo= false;
 
 
         System.out.println("=== DISPOSITIVO 1 ===");
-        dispositivo1.mostrarDatos();
+        dispositivo1.mostrarInformacion();
         dispositivo1.mostrarEstado();
 
         System.out.println();
 
 
         System.out.println("=== DISPOSITIVO 2 ===");
-        dispositivo2.mostrarDatos();
+        dispositivo2.mostrarInformacion();
         dispositivo2.mostrarEstado();
 
         dispositivo1.activo = false;
-        System.out.println();
-        System.out.println("Cambiando estado de... "+ dispositivo1.nombre);
+        System.out.println("\n---------------------------");
+        System.out.println(">>>>> CAMBIO DE ATRIBUTOS <<<<<");
         System.out.println("=== DISPOSITIVO 1 ===");
-
         dispositivo1.mostrarEstado();
         dispositivo1.activar();
         dispositivo1.activar();

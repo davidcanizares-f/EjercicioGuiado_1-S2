@@ -7,16 +7,16 @@ public class Dispositivo {
     public boolean activo;
 
 
-    public void mostrarDatos() {
+    public void mostrarInformacion() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Tipo: " + tipo);
     }
-    public void mostrarEstado() {
-        System.out.println(activo ? "El/la " + nombre + " esta: Encendido" : "El/la " + nombre + " esta: Apagado");
+    void mostrarEstado() {
+        System.out.println(activo ? "Estado: Encendido" : "Estado: Apagado");
     }
 
     void activar(){
-        System.out.println("Activando " + nombre + "...");
+        System.out.println("> Activando " + nombre + "...");
         if(activo == false){
             activo=true;
             System.out.println("El/la " + nombre + " se ha activado");
